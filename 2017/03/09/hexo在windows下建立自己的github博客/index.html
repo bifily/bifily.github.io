@@ -375,21 +375,37 @@
                 <!-- Post Content -->
                 <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
     
-        <p>先要安装git和node.js<br>注册github账户<br>在git执行代码<br><code>bash
-$ ssh-keygen -t rsa -C &quot;1025118009@qq.com&quot;</code> bash<br>这里的邮箱是你的邮箱地址<br>将得到的id_rsa.pub文件内容复制下来<br>在github中添加SSH key<br>把内容粘贴到key中</p>
-<p>搭建博客时<br>1.安装hexo<br>    新建一个文件夹hexo<br>    在文件夹中右键git bash here<br>    输入命令：<br>    <code>bash
-$ npm install -g hexo-cil</code> bash<br>    初始化hexo:<br>        <code>bash
-$ hexo init Remix</code> bash<br>    在Remix文件夹中:<br>        <code>bash
-$ npm install</code> bash<br>    <code>bash
-$ hexo g</code> bash<br>    <code>bash
-$ hexo s --debug</code> bash<br>然后在github新建一个仓库，命名为你的github名字.github.io<br>然后在当前目录下执行bash，复制粘贴提示代码即可<br>修改_config.yml文件：<br>    <code>bash
-  type: git
-  repository: https://github.com/bifily/bifily.github.io.git
-  branch: master</code> bash<br>安装hexo-deployer-git插件<br>    <code>bash
-$ npm install hexo-deployer-git --save</code> bash<br>部署到github：<br><code>bash
-$ hexo clean
-$ hexo generator #简写 hexo g
-$ hexo deploy #简写 hexo d</code> bash<br><img src="/img/origin.jpg" alt=""></p>
+        <p>先要安装git和node.js<br>注册github账户<br>在git执行代码</p>
+<pre><code class="bash">$ ssh-keygen -t rsa -C <span class="string">"1025118009@qq.com"</span>
+</code></pre>
+<p>这里的邮箱是你的邮箱地址<br>将得到的id_rsa.pub文件内容复制下来<br>在github中添加SSH key<br>把内容粘贴到key中</p>
+<p>搭建博客时<br>1.安装hexo<br>    新建一个文件夹hexo<br>    在文件夹中右键git bash here<br>    输入命令：</p>
+<pre><code class="bash">$ npm install -g hexo-cil
+</code></pre>
+<p>初始化hexo:</p>
+<pre><code class="bash">$ hexo init Remix
+</code></pre>
+<p>在Remix文件夹中:</p>
+<pre><code class="bash">$ npm install
+</code></pre>
+<pre><code class="bash">$ hexo g
+</code></pre>
+<pre><code class="bash">$ hexo s --debug
+</code></pre>
+<p>然后在github新建一个仓库，命名为你的github名字.github.io<br>然后在当前目录下执行bash，复制粘贴提示代码即可<br>修改_config.yml文件：</p>
+<pre><code class="bash"><span class="built_in">type</span>: git
+repository: https://github.com/bifily/bifily.github.io.git
+branch: master
+</code></pre>
+<p>安装hexo-deployer-git插件</p>
+<pre><code class="bash">$ npm install hexo-deployer-git --save
+</code></pre>
+<p>部署到github：</p>
+<pre><code class="bash">$ hexo clean
+$ hexo generator <span class="comment">#简写 hexo g</span>
+$ hexo deploy <span class="comment">#简写 hexo d</span>
+</code></pre>
+<p><img src="/img/origin.jpg" alt=""></p>
 
     
 
